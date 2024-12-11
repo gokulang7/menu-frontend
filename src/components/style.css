@@ -1,0 +1,246 @@
+/* .nav1{
+    font-family: 'Times New Roman', Times, serif;
+    background-position: 100%;
+}
+.nav2{
+    
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+} */
+
+.nav1 {
+  font-family: 'Times New Roman', Times, serif;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 10px; 
+  margin-left: 10%;
+}
+
+.nav2 {
+  margin-left: 100%;
+
+}
+
+.img1{
+    width: 30px;
+    height: 30px;
+}
+.home{
+    margin: 0;
+    padding: 0;
+    height: 500px; 
+    width: 100%; 
+    background: url('https://img.freepik.com/premium-photo/bowl-chinese-food-with-steam-rising-showcasing-essence-lo-mein-cuisine_862489-27110.jpg') no-repeat center center; 
+    background-size: cover; 
+     background-attachment: fixed; 
+}
+.menu1{
+   
+    
+    padding: 150px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(240, 237, 233);
+}
+.menu2{
+   
+    
+    padding: 0;
+    margin-top: -100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(240, 237, 233);
+}
+
+
+
+.add-item-container {
+    background:url('https://static.vecteezy.com/system/resources/thumbnails/033/657/594/small_2x/instant-noodles-ready-to-serve-in-the-kitchen-table-ai-generated-photo.jpg') ;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-item-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-item-container .btn1 {
+    margin: 10px 0;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .add-item-container .btn1:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  .add-item-container button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-item-container button:hover {
+    background-color: #0056b3;
+  }
+#but{
+  margin-left: 42%;
+  margin-top: 20px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .add-item-container {
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 15px;
+  }
+  
+
+  .add-item-container .btn1 {
+      font-size: 14px;
+      padding: 8px 10px;
+  }
+
+  .add-item-container button {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .menu1, .menu2 {
+      padding: 50px;
+      font-size: 18px;
+  }
+  .home {
+      height: 300px;
+  }
+  .nav2 {
+    margin-left: 0; 
+    margin-right: 20px; 
+    text-align: right; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .add-item-container {
+      padding: 10px;
+  }
+
+  .add-item-container .btn1, 
+  .add-item-container button {
+      font-size: 12px;
+      padding: 8px;
+  }
+
+  .menu1, .menu2 {
+      font-size: 16px;
+  }
+
+  .home {
+      height: 250px;
+  }
+  .nav2 {
+    margin-right: 10px; 
+    font-size: 14px; 
+  }
+}
+
+
+
+
+
+/* Styling for the row */
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+/* Styling for the column boxes */
+.col {
+  width: 30%; /* Adjust based on your layout */
+  padding: 20px;
+  background-color: #474545; /* Light background color */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Add hover effect */
+.col:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for headings */
+.col h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #e3cdcd;
+}
+
+/* Styling for paragraphs */
+.col p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #e5dddd;
+}
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center; /* Center the stacked columns */
+  }
+
+  .col {
+    width: 80%; /* Make columns take up more space on smaller screens */
+    margin-bottom: 20px; /* Add spacing between stacked columns */
+  }
+}
+
+@media (max-width: 480px) {
+  .col {
+    width: 95%; /* Further reduce width for very small screens */
+    padding: 15px; /* Adjust padding for smaller viewports */
+  }
+
+  .col h5 {
+    font-size: 1rem; /* Adjust heading font size */
+  }
+
+  .col p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+}
+
+
+
+
